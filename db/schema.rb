@@ -12,9 +12,12 @@
 
 ActiveRecord::Schema.define(version: 20180131095831) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "projects", force: :cascade do |t|
     t.string "name"
-    t.integer "user_id"
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_projects_on_user_id"
@@ -24,7 +27,7 @@ ActiveRecord::Schema.define(version: 20180131095831) do
     t.string "name"
     t.string "status"
     t.integer "priority"
-    t.integer "project_id"
+    t.bigint "project_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["project_id"], name: "index_tasks_on_project_id"
@@ -39,4 +42,6 @@ ActiveRecord::Schema.define(version: 20180131095831) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "projects", "users"
+  add_foreign_key "tasks", "projects"
 end
