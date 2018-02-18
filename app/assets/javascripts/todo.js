@@ -105,6 +105,7 @@ function getAll(){
             $("#myModaledit #hiddenValue").val(project_id);
             $('#myModaledit').modal('show');
             console.log('clickeditprojectbtn');
+            $('#name_edit').val('');
         });
         
         $('.todolisttab').on('click', '.delprojectbtn', function(event){
@@ -147,6 +148,7 @@ function getAll(){
             $("#myModaledittask #hiddenValuetask").val(task_id);
             $("#myModaledittask #hiddenValueproject").val(project_id);
             $('#myModaledittask').modal('show');
+            $('#name_edit_task').val('');
             console.log('clickedittask');
         });
         
