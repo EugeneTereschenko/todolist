@@ -1,0 +1,180 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *
+ */
+
+
+@import "bootstrap";
+@import "bootstrap-sprockets";
+@import "static_pages.css";
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../assets/glyphicons-halflings-regular.eot');
+  src: url('../assets/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+  url('../assets/glyphicons-halflings-regular.woff') format('woff'),
+  url('../assets/glyphicons-halflings-regular.ttf') format('truetype'),
+  url('../assets/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+body {
+    //background: linear-gradient(to top, #f1da36, #fefcea) fixed;
+    //background-repeat: no-repeat;
+    
+    
+    background: white;
+    background-repeat:no-repeat;
+    background: -webkit-linear-gradient( to top, #d59813, #dad2c7)fixed;
+    background: -moz-linear-gradient( to top, #d59813, #dad2c7) fixed;
+    background: -ms-linear-gradient( to top, #d59813, #dad2c7) fixed;
+    background: -o-linear-gradient( to top, #d59813, #dad2c7) fixed;
+    background: linear-gradient( to top, #d59813, #dad2c7) fixed;
+}
+
+.inline {
+    display: inline-block
+}
+
+hr {
+    display: block;
+    height: 1px;
+    width: 17px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 0;
+    padding: 0;
+}
+
+.left {
+    float:left;
+}
+
+.btn-separator:after {
+    content: ' ';
+    display: block;
+    float: left;
+    background: #ADADAD;
+    margin: 0 10px;
+    height: 34px;
+    width: 1px;
+}
+
+.middle {
+    margin-top: 10px;
+}
+.projectactionbtn{
+    margin-left: 30px;
+}
+
+.collapse {
+    display:none!important;
+}
+.trgray {
+    background: #d1d1d1;
+}
+
+.trgrad {
+     background: linear-gradient(to bottom, #1e5799 0%,#2989d8 10%,#207cca 91%,#7db9e8 100%);
+}
+
+.text600 {
+    width: 600px;
+}
+
+.projectactionbtn {
+    float: right;
+    margin-right: 10px;
+}
+
+.projectlistcell {
+    color: #ffffff;
+}
+
+.plusbtn {
+    color: #589171;
+}
+
+.plusbtnb {
+    color: #2f4870;
+}
+
+.width150 {
+   width: 150px;
+}
+
+.width120 {
+   width: 120px;
+}
+
+.actncolor {
+    color: #999999;
+}
+
+table {
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    word-break: break-all;
+    margin-bottom: 20px;
+    width: 800px;
+    background-color: #ffffff;
+}
+
+table tr {
+    height: 45px;
+}
+
+table tbody tr:first-child td {
+    border-top: none;
+}
+
+table tr:nth-child(2) td {
+    border: none;
+}
+
+table tr:hover {
+    cursor: pointer;
+}
+
+table th {  
+    height: 50px;
+    padding: 7px
+}
+
+table td {
+    border-right: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+
+table td:last-child {
+    border-right: none;
+}
+
+table tr:last-child:hover td:first-child {
+    border-bottom-left-radius: 25px;
+}
+
+table tr:last-child:hover td:last-child {
+    border-bottom-right-radius: 25px;
+}
+
+.table-hover tbody tr:hover > th {
+  background: linear-gradient(to bottom, #1e5799 0%,#2989d8 10%,#207cca 91%,#7db9e8 100%);
+}
+
+.table-hover tbody tr:hover > td {
+  background-color: #fcfed5;
+}
+
+.table-hover tbody tr:nth-child(2):hover > td {
+    background: #d1d1d1;
+}

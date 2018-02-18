@@ -1,0 +1,94 @@
+
+<div class="gradient">
+<div class="text-center container">
+<h3>SIMPLE TODO LIST</h3>
+<p>FROM RUBY GARAGE</p>
+
+<%= javascript_tag "var user_id = #{@current_user.id};" %>
+<%= stylesheet_link_tag "static_pages.css" %>
+    
+<section class="todoapp">
+    <header class="header">
+    </header>
+    <section class="todolisttab inline">
+    </section>
+    <section class="todoappCool">
+    <button type="button" class="btn btn-primary btn-lg" class="glyphicon" id="addbtn"><span class="glyphicon glyphicon-plus plusbtnb" aria-hidden = "true"></span><span>Add TODO list</span></button>
+    </section>
+</section>
+
+<!-- Modal -->
+    <div class="modal fade" id="myModaladd" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content -->
+            
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Add Project</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                    <label for="project">Project</label>
+                    <input type="text" class="form-control" id="name_add">
+                    </div>
+                </div>     
+                <div class="modal-footer">
+                    <button id="add" type="button" class="btn btn-default" data-dismiss="modal">Add</button>
+                    <button id="close" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>           
+            </div>
+        </div>
+    </div>
+    
+        <div class="modal fade" id="myModaledit" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content -->
+            
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Edit Project</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                    <label for="project">Project</label>
+                    <input type="text" class="form-control" id="name_edit">
+                    <input id="hiddenValue" class="hide">    
+                    </div>
+                </div>     
+                <div class="modal-footer">
+                    <button id="edit" type="button" class="btn btn-default" data-dismiss="modal">Edit</button>
+                    <button id="close" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>           
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="myModaledittask" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content -->
+            
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Edit Task</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                    <label for="task">Task</label>
+                    <input type="text" class="form-control" id="name_edit_task">
+                    <input id="hiddenValueproject" class="hide">
+                    <input id="hiddenValuetask" class="hide">
+                    </div>
+                </div>     
+                <div class="modal-footer">
+                    <button id="edittask" type="button" class="btn btn-default" data-dismiss="modal">Edit</button>
+                    <button id="close" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>           
+            </div>
+        </div>
+    </div>
+    
+</div>
+</div>
